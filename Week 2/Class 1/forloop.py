@@ -3,3 +3,5 @@ for y in range(11):
     for x in (range(y)):
         print("*", end="")
     print()
+
+
