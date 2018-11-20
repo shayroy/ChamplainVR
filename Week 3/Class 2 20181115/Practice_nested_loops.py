@@ -14,5 +14,18 @@ print (u)
 #ran 8 times
 #when you run cursor over the little triangle/squares at the left tell you what is in which block.
 
+u = 0
+for x in range(2):
+    print(x)
+
+    for y in range(2):
+        print(y)
+
+        for z in range(2):
+            print(z)
+
+            u = u + 1
+print (u)
+
 
 

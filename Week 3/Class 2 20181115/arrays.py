@@ -1,3 +1,4 @@
+# adding to arrays
 a1 = [1, 2, 3]
 for x in a1:
     print(x)

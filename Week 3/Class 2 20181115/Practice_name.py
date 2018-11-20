@@ -3,5 +3,5 @@ print (result)
 
 #brendan's solution
 name = "champlain"
-print ("I am taking this course at " + name.title (name))
+print ("I am taking this course at " + name.title())
 # is name entered correctly
