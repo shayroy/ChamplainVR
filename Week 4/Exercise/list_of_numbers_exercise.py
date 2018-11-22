@@ -4,6 +4,7 @@
 # Scan the list and display several values:
 # - The minimum, the maximum, the count and the average.
 # - Brendan asks us not to use the built in min, max, len  or sum functions.
+#
 
 import random
 randomList = []
