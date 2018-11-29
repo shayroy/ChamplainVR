@@ -31,3 +31,4 @@ print("-----------")
 for v in countries.values():
     print(v)
 
+# The printouts do not seem to always be what I expect
