@@ -11,7 +11,9 @@ function call that includes the number of tracks on an album."""
 
 def make_album(artist_name, album_title, number_of_tracks=0):
     """Return a dictionary of information about albums."""
-    entry = {'artist':artist_name, 'title':album_title, 'tracks':number_of_tracks}
+    entry = {'artist':artist_name, 'title':album_title}
+    if number_of_tracks:
+        entry['number_of_tracks'] = number_of_tracks
     return entry
 
 entry0 = make_album('The Beatles', 'Abby Road')
