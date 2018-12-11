@@ -1,7 +1,8 @@
 # have to assign something
 class Calculator:
-    number1= 0
-    number2= 0
+    number1 = 0
+    number2 = 0
+
 
 calc1 = Calculator()
 

@@ -9,7 +9,7 @@ calc1.number1 = 2
 calc1.number2 = 3
 
 calc2 = calc1
-calc2 is the same as calc1
+#calc2 is the same as calc1
 
 print("number1 of calc1 is " + str(calc1.number1))
 print("number1 of calc2 is " + str(calc2.number1))
