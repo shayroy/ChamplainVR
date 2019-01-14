@@ -15,7 +15,7 @@
 #
 with open("example.txt") as f:
 
-   print(f.read(10).rstrip())
+   print(f.read().rstrip())
 
 
 
