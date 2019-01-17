@@ -1,0 +1,7 @@
+f = open("test_file2.txt", "w+")
+f.write("Testing 123")
+print(f.read())
+f.seek(4)
+f.write("*")
+f.seek(0)
+print(f.read())

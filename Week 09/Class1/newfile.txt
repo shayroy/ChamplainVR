@@ -1,7 +1,4 @@
-Hello this is a test.
-Hello this is line 2.
-Hello this is a test.
-Hello this is line 2.
+
 Hello this is a test.
 Hello this is line 2.
 This is line A
