@@ -29,7 +29,7 @@ class Ui_HelloWorldDialog(object):
         self.retranslateUi(HelloWorldDialog)
         QtCore.QMetaObject.connectSlotsByName(HelloWorldDialog)
 
-        self.btn_ok.clicked.connectr(self.button_pressed())  # We added this.
+        self.btn_ok.clicked.connect(self.button_pressed)  # We added this.
 
     def retranslateUi(self, HelloWorldDialog):
         _translate = QtCore.QCoreApplication.translate
