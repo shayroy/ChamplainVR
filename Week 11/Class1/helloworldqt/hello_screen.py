@@ -39,7 +39,7 @@ class Ui_HelloWorldDialog(object):
 
     def button_pressed(self): # We added this.
 
-        self.label_result.setText(self.edit_inputname.text()) # We added this.
+        self.label_result.setText("Hello " + self.edit_inputname.text()) # We added this.
 
 if __name__ == "__main__":
     import sys
