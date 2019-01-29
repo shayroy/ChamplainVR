@@ -11,10 +11,12 @@ class PyCalc():
 
         #return "The average of the numbers is " + str(mysum / len(mylist)) + "."
         # Alternate more professional way would use sum and avoid the need for the for loop:
+        # Brendan says the text string should not be in the return itself but rather in the print below.
         return "The average of the numbers is " + str(sum(mylist) / len(mylist)) + "."
 
     def min_max(self, mylist):
         # Calculates the minimum and maximum of the list.
+        # Brendan asks me to separate them into two methods as you should only have one per method.
         mylist.sort()
         return "The minimum number is " + str(mylist[0]) + ".\n" + "The maximum number is " + str(mylist[-1]) + "."
 

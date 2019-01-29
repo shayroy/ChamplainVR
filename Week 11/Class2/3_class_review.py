@@ -7,35 +7,48 @@ class PyCalc():
     def __init__(self, mylist):
         self.mylist = mylist
 
-    def generate_random_data(self, x, y, z):
-        mylist = random.sample(xrange(1, 101), 10)
-        return "Here is a 10 random numbers between 1 and 100: " + str(mylist) + "."
-
+    def generate_random_data(self, numb, start, end):
+        # Generates the random list.
+        for x in range(numb):
+            self.mylist.append(random.randint(start, end))
 
     def average(self, mylist):
-    # Calculates the average of the list using sum.
+        # Calculates the average of the list using sum and len.
+        return sum(mylist) / len(mylist)
 
-        return "The average of the numbers is " + str(sum(mylist) / len(mylist)) + "."
+    def min(self, mylist):
+        # Calculates the minimum of the list.
+        mylist.sort()
+        return str(mylist[0])
 
-    def min_max(self, mylist):
-    # Calculates the minimum and maximum of the list.
-       mylist.sort()
-       return "The minimum number is " + str(mylist[0]) + ".\n" + "The maximum number is " + str(mylist[-1]) + "."
+    def max(self, mylist):
+        # Calculates the maximum of the list.
+        mylist.sort()
+        return str(mylist[-1])
 
-# def clear(self, mylist):
-#   self.mylist = []
-#  if self.mylist != []:
-#     return "The list should be cleared."
-# else:
-#   return "The list is now cleared."
-# better to put boolean and comment cl
+    def clear_list(self, mylist):
+        # Clears the list.
+        mylist.clear()
+# As written, this creates error with mylist line 33.
+        # Brendan said better to put boolean and comment than for - else.
+
+mylist = []
 
 c = PyCalc(mylist)
 
-#c.clear
-print (c.generate_random_data (mylist))
+str(c.generate_random_data(10, 1, 100))
 
-print (str(c.average(mylist)))
+print ("Here is a list of 10 random numbers:\n{0}:".format(str(c.mylist)))
 
-print (c.min_max(mylist))
+print ("The average is " + (str(c.average(mylist))) + ".")
+
+print ("The minimum number is " + c.min(mylist) + ".")
+
+print ("The maximum number is " + c.max(mylist) + ".")
+
+c.clear_list(mylist)
+
+
+
+
 
