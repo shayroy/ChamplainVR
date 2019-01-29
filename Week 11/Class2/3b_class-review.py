@@ -5,13 +5,13 @@ class PyCalc():
 
     def average(self, mylist):
         # Calculates the average of the list manually.
-        mysum = 0
-        for x in mylist:
-            mysum += x
+        #mysum = 0
+        #for x in mylist:
+        #    mysum += x
 
-        return "The average of the numbers is " + str(mysum / len(mylist)) + "."
+        #return "The average of the numbers is " + str(mysum / len(mylist)) + "."
         # Alternate more professional way would use sum and avoid the need for the for loop:
-        # return "The average of the numbers is " + str(sum(mylist) / len(mylist)) + "."
+        return "The average of the numbers is " + str(sum(mylist) / len(mylist)) + "."
 
     def min_max(self, mylist):
         # Calculates the minimum and maximum of the list.
