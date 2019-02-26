@@ -12,8 +12,20 @@ print(my_result)
 
 # can have two returns for a function.
 
+
 def isnumbernegative(n):
-    if n < 0
+    if n < 0:
         return True
+    return False
+mynumber = isnumbernegative(45)
+print(mynumber)
+
+
+
+
+
+
+
+
 
 

@@ -1,9 +1,9 @@
 # Exercise
 # Create a list of numbers, randomly assigned.
-# Hint: To generate a reandom number use -> random.randomint(1,101)
+# Hint: To generate a random number use -> random.randomint(1,101)
 # Scan the list and display several values:
 # - The minimum, the maximum, the count and the average.
-# - Brendan as ks us not to use the built in min, max, len  or sum functions.
+# - Brendan asks us not to use the built in min, max, len  or sum functions.
 #
 
 import random

@@ -22,9 +22,9 @@ class Cat:
         for m in range(number_time):
             print("Meow")
 
-    def meow(self, number_time, phrase="", tone):
-        for m in range(number_time):
-            print("Meow" + phrase)
+    # def meow(self, number_time, phrase="", tone):
+    #     for m in range(number_time):
+    #         print("Meow" + phrase)
 # The second def meow overloads the function. Not needed or really works here. Brenden will
 # come back with better implementation. It is a more advanced feature to call or
 # implement the most appropriate method.
@@ -35,10 +35,10 @@ c1 = Cat("Jack", 2)
 # this is intatiation. In other languages called constructor. Brendan wants the cat to automatically registered if
 # greater than 2 years old.
 c2 = Cat("Samantha", 9)
-print("Cat c1 registation state is " + str(c1.registered))
-print("Cat c2 registation state is " + str(c2.registered))
+print("Cat c1 registration state is " + str(c1.registered))
+print("Cat c2 registration state is " + str(c2.registered))
 #use dot to evoke method
-c1.meow(5, "TEST", None)
+c1.meow(5)
 
 
 
