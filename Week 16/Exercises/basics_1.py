@@ -1,19 +1,37 @@
 import re
+from func_test import *
 
 Input_list = [6, "g", 5, "b", "$", "c", 7, 26, 5, "z", "!"]
-#variables for Boolean true or false)
-is_number(True)
-is_spec_char(True)
+num_list =[]
+char_list =[]
 
+count = 0
+for i in Input_list:
+    count = count + 1
+    is_number = test_num(str(i))
+    is_char = test_char(str(i))
 
-def regex_is_numeric(candidate):
-    return re.match("^[0-9]+$", candidate)
+    if is_number:
+        num_list.append(i)
+        mx = find_max(num_list)
+        print("Element # " + str(count) + ": Value is " + str(i) + ". This is a number. ", end='')
 
-def regex_is_spec_char(candidate):
-    return re.match("[^A-Za-z0-9]")
+        if int(i) % 2 == 0:
+            is_evennum = True
+            print(" This is an even number.", end='')
 
-if candidate.is_number:
+        if int(i) == int(max(num_list)):
+            is_max = i
+            print(" This is the highest number so far.")
+        else:
+            print(" This is not the highest number so far.")
 
+    elif is_char:
+        char_list.append(i)
+        char_list.sort()
+        print("Element # " + str(count) + ": Value is " + str(i) + ". This is a character.  ", end='')
+        print( "So far, the characters found are ", end='')
+        print("[" + ",".join(char_list) + "]")
 
-
-
+    else:
+        print("Element # " + str(count) + ": Value is " + str(i) + ". This is a special character.")
