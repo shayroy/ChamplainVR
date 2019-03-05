@@ -20,5 +20,5 @@ counter = 0
 for x in ["a", "b"]:
     for y in ["c", "d"]:
         for z in ["e", "f"]:
-            print(x,y,z)
+            print(x, y, z)
 

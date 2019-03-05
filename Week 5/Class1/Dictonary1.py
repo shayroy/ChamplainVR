@@ -4,9 +4,9 @@ my_list = {"A": "Brendan", "B":"Joe", "C": "Mary"}
 print(my_list["C"])
 # this prints the value Mary for key C.
 # see Dictionary Operations slide
-# Under lists there can be arrays(also a list) and dictionnaries, which are an indexed list, which behave differently.
+# Under lists there can be arrays(also a list) and dictionaries, which are an indexed list, which behave differently.
 
-#Try to find 2 ways to fix province list, one based on testing the existence of a key value, and another using something/
+# Try to find 2 ways to fix province list, one based on testing the existence of a key value, and another using something/
 # we did before.
 
 province_list = {"QC": "Quebec", "ON": "Ontario"}
@@ -31,5 +31,6 @@ except KeyError:
 
 # Brendan thinks the first is easier to understand, but both work fine. 
 
+province_list.items()
 
 

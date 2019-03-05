@@ -1,0 +1,45 @@
+# To split a long variable string over several lines enclose it in triple quotes.
+Zen_of_Python = """Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch."
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!)"""
+
+# I don't know why the backslash does not work here to split lines, as everything prints on one line, with or without
+# an indent.
+Zen_of_Python = "Readability counts. \
+    Special cases aren't special enough to break the rules.\
+    Although practicality beats purity.\
+    Errors should never pass silently.\
+    Unless explicitly silenced.\
+    In the face of ambiguity, refuse the temptation to guess.\
+    There should be one-- and preferably only one --obvious way to do it.\
+    Although that way may not be obvious at first unless you're Dutch.\
+    Now is better than never.\
+    Although never is often better than *right* now.\
+    If the implementation is hard to explain, it's a bad idea.\
+    If the implementation is easy to explain, it may be a good idea.\
+    Namespaces are one honking great idea -- let's do more of those!)"
+
+print(Zen_of_Python)
+
+# You can import Zen of Python by simply typing "import this", and it prints with proper line breaks.
+import this
+print(this)
+
+# This statement includes the \n linereturn and the length "len" methond
+print("\nZen of Python has "+ str(len(Zen_of_Python)) + " characters.")
+
+
+
+
+
+

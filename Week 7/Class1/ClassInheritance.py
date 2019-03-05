@@ -1,9 +1,9 @@
 # Shape is the class
 # Circle and Square are in this
-# qualities of circle could be radius and circumfrence
+# qualities of circle could be radius and circumference
 # qualities of rectangle are length, height
 # qualities of Shape are colour, thickness
-# Circle has colour, thickness, radious and circumfrence
+# Circle has colour, thickness, radius and circumference
 # rectangle has length, height, colour and thickness
 # there is therefore some repetition that we should deal with.
 # This is called inheritance.
@@ -34,5 +34,6 @@ c.make_sound()
 
 
 # There is no object yet.
-# You can have no constructor (or initializer), or construtor in one or the other. If you want in all, put in class Animal.
-# Make a constructor only if necessary at beginning of insubstantition. Need this to give name, for example.
+# You can have no constructor (or initializer), or constructor in one or the other. If you want in all,
+# put in class Animal.
+# Make a constructor only if necessary at beginning of instantiation. Need this to give name, for example.

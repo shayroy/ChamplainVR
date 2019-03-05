@@ -7,7 +7,7 @@
 # keys can also point to an array, such as keeping track of scores.
 # keys could be student ids and array could be result on four quizzes.
 # json is a common way in java script to give a list.
-# key colon vlaue is the
+# key colon value is the
 
 # try coding four or five provinces.
 
