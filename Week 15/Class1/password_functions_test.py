@@ -1,7 +1,7 @@
 import unittest
 
 
-from .password_functions import *
+from password_functions import *
 
 class Test_PW_Functions(unittest.TestCase):
 
