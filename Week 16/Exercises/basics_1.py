@@ -1,37 +1,33 @@
-import re
 from func_test import *
 
 Input_list = [6, "g", 5, "b", "$", "c", 7, 26, 5, "z", "!"]
-num_list =[]
 char_list =[]
-
+max_value =number_list_max
 count = 0
+
 for i in Input_list:
-    count = count + 1
-    is_number = test_num(str(i))
-    is_char = test_char(str(i))
+    count += 1
+    is_a_number = test_num(str(i))
+    is_a_char = test_char(str(i))
 
-    if is_number:
-        num_list.append(i)
-        mx = find_max(num_list)
-        print("Element # " + str(count) + ": Value is " + str(i) + ". This is a number. ", end='')
+    print("Element #" + str(count) + ". Value is " + str(i), end='')
 
-        if int(i) % 2 == 0:
-            is_evennum = True
+    if is_a_number:
+        print(" This is a number. ", end='')
+        if test_even:
             print(" This is an even number.", end='')
-
-        if int(i) == int(max(num_list)):
-            is_max = i
-            print(" This is the highest number so far.")
+        if i == max_value:
+            print(". This is the highest number in the list.")
         else:
-            print(" This is not the highest number so far.")
+            print(". This is not the highest number in the list.")
 
-    elif is_char:
+
+    elif is_a_char:
         char_list.append(i)
         char_list.sort()
-        print("Element # " + str(count) + ": Value is " + str(i) + ". This is a character.  ", end='')
+        print(". This is a character.  ", end='')
         print( "So far, the characters found are ", end='')
         print("[" + ",".join(char_list) + "]")
 
     else:
-        print("Element # " + str(count) + ": Value is " + str(i) + ". This is a special character.")
+        print(". This is a special character.")
