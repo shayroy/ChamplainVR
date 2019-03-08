@@ -1,5 +1,4 @@
 import math
-import re
 
 class Shape:
     """This is the parent class for shapes."""
@@ -104,40 +103,34 @@ class Shapes:
             total_area =+ x.get_area()
         return total_area
 
-r1 = Rectangle("Blue", length=3, width=4)
-
-print("The Rectangle r1 is " + r1.get_colour() + ", its width is " + str(r1.get_width()) +
-", its length is " + str(r1.get_length()) + ", its area is " + str(r1.get_area()) + ", and its perimeter is "
-+ str(r1.get_perimeter()) + ".")
-
-r2 = Rectangle("Red", 4, 5)
-print("The Rectangle r2 is " + r2.get_colour() + ", its width is " + str(r2.get_width()) +
-", its length is " + str(r2.get_length()) + "its area is " + str(r2.get_area()) + ", and its perimeter is "
-+ str(r2.get_perimeter()) + ".")
-
-s1 = Square("Yellow", side_length=5)
-print("The Square s1 is " + s1.get_colour() + ", its side length is " + str(s1.get_side_length()) + ", its area is " +
-str(s1.get_area()) + ", and its perimeter is " + str(s1.get_perimeter()) + ".")
-
-c1 = Circle("Green", 2)
-print("The Circle c1 is " + c1.get_colour() + ", its radius is " + str(c1.get_radius()) + ", its area is "
-      + str(c1.get_area()) + ", and its perimeter is " + str(c1.get_perimeter()) + ".")
-
-shapes = Shapes()
-shapes.add_shape(r1)
-shapes.add_shape(r2)
-shapes.add_shape(s1)
-shapes.add_shape(c1)
-a = shapes.get_shape_count()
-print("The number of shapes in the list is " + str(a) + ".")
-shapes.delete_shape(r1)
-a = shapes.get_shape_count()
-print("After deleting r1, the number of shapes in the list is " + str(a) + ".")
-#b = shapes.get_total_area()
-#print("The total area of shapes in the list is " + str(b) + ".")
-
-
-
-
-
-
+# r1 = Rectangle("Blue", length=3, width=4)
+#
+# print("The Rectangle r1 is " + r1.get_colour() + ", its width is " + str(r1.get_width()) +
+# ", its length is " + str(r1.get_length()) + ", its area is " + str(r1.get_area()) + ", and its perimeter is "
+# + str(r1.get_perimeter()) + ".")
+#
+# r2 = Rectangle("Red", 4, 5)
+# print("The Rectangle r2 is " + r2.get_colour() + ", its width is " + str(r2.get_width()) +
+# ", its length is " + str(r2.get_length()) + "its area is " + str(r2.get_area()) + ", and its perimeter is "
+# + str(r2.get_perimeter()) + ".")
+#
+# s1 = Square("Yellow", side_length=5)
+# print("The Square s1 is " + s1.get_colour() + ", its side length is " + str(s1.get_side_length()) + ", its area is " +
+# str(s1.get_area()) + ", and its perimeter is " + str(s1.get_perimeter()) + ".")
+#
+# c1 = Circle("Green", 2)
+# print("The Circle c1 is " + c1.get_colour() + ", its radius is " + str(c1.get_radius()) + ", its area is "
+#       + str(c1.get_area()) + ", and its perimeter is " + str(c1.get_perimeter()) + ".")
+#
+# shapes = Shapes()
+# shapes.add_shape(r1)
+# shapes.add_shape(r2)
+# shapes.add_shape(s1)
+# shapes.add_shape(c1)
+# a = shapes.get_shape_count()
+# print("The number of shapes in the list is " + str(a) + ".")
+# shapes.delete_shape(r1)
+# a = shapes.get_shape_count()
+# print("After deleting r1, the number of shapes in the list is " + str(a) + ".")
+# #b = shapes.get_total_area()
+# #print("The total area of shapes in the list is " + str(b) + ".")

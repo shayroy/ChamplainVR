@@ -1,4 +1,4 @@
-from func_test import *
+from Q1_func_test import *
 
 Input_list = [6, "g", 5, "b", "$", "c", 7, 26, 5, "z", "!"]
 char_list =[]
